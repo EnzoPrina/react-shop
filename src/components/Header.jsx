@@ -2,8 +2,8 @@ import React, { useState, useContext } from 'react';
 import '@styles/Header.scss';
 import Menu from '@components/Menu';
 import MyOrder from '../containers/MyOrder';
-import menu from '@icons/icon_menu.svg';
-import logo from '@logos/logo_yard_sale.svg';
+import menu from '@icons/icon_menu-01.svg';
+import logo from '@logos/logo-01.svg';
 import AppContext from '../context/AppContext';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
 
@@ -20,32 +20,20 @@ const Header = () => {
 		<nav>
 			<img src={menu} alt="menu" className="menu" />
 			<div className="navbar-left">
-				<img src={logo} alt="logo" className="nav-logo" />
+				<img src={logo} alt="logo" className="nav-logo" href='/'/>
 				<ul>
 					<li>
-						<a href="/">All</a>
+						<a href="/">Categories</a>
 					</li>
-					<li>
-						<a href="/">Clothes</a>
-					</li>
-					<li>
-						<a href="/">Electronics</a>
-					</li>
-					<li>
-						<a href="/">Furnitures</a>
-					</li>
-					<li>
-						<a href="/">Toys</a>
-					</li>
-					<li>
-						<a href="/">Others</a>
+					<li >
+						<a  href="/about">About</a>
 					</li>
 				</ul>
 			</div>
 			<div className="navbar-right">
 				<ul>
 					<li className="navbar-email" onClick={handleToggle}>
-						platzi@example.com
+						correo@example.com
 					</li>
 					<li
 						className="navbar-shopping-cart"
@@ -63,3 +51,4 @@ const Header = () => {
 }
 
 export default Header;
+

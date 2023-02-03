@@ -9,9 +9,10 @@ nav {
 }
 .menu {
 	display: none;
+	width: 25px;
 }
 .nav-logo {
-	width: 100px;
+	width: 120px;
 }
 .navbar-left ul,
 .navbar-right ul {
@@ -58,6 +59,7 @@ nav {
 	font-weight: bold;
 	position: absolute;
 	top: -6px;
+	color: white;
 	right: -3px;
 	display: flex;
 	justify-content: center;
@@ -69,8 +71,10 @@ nav {
 	}
 	.navbar-left ul {
 		display: none;
+		
 	}
 	.navbar-email {
 		display: none;
 	}
 }
+

@@ -2,6 +2,8 @@
 
 .ProductItem {
 	width: 240px;
+	border-radius: 20px;
+	box-shadow: 3px 2px 2px rgba(245, 245, 245, 0.178)
 }
 .ProductItem img {
 	width: 240px;
@@ -14,6 +16,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 12px;
+	margin-left: 5px;
 }
 .product-info figure {
 	margin: 0;
@@ -45,4 +48,7 @@
 		width: 140px;
 		height: 140px;
 	}
+}
+img {
+	cursor: pointer;
 }

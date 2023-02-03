@@ -1,19 +1,20 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Layout from '@containers/Layout';
-import Home from '@pages/Home';
-import Login from '@pages/Login';
-import RecoveryPassword from '@pages/RecoveryPassword';
-import SendEmail from '@pages/SendEmail';
-import NewPassword from '@pages/NewPassword';
-import MyAccount from '@pages/MyAccount';
-import CreateAccount from '@pages/CreateAccount';
-import Checkout from '@pages/Checkout';
-import Orders from '@pages/Orders';
-import NotFound from '@pages/NotFound';
+import Home from '../templates/Home';
+import Login from '../templates/Login';
+import RecoveryPassword from '../templates/RecoveryPassword';
+import SendEmail from '../templates/SendEmail';
+import NewPassword from '../templates/NewPassword';
+import MyAccount from '../templates/MyAccount';
+import CreateAccount from '../templates/CreateAccount';
+import Checkout from '../templates/Checkout';
+import Orders from '../templates/Orders';
+import NotFound from '../templates/NotFound'
 import AppContext from '../context/AppContext';
 import '@styles/global.css';
 import useInitialState from '../hooks/useInitialState';
+import About from '../templates/About';
 
 const App = () => {
 	const InitialState = useInitialState();
@@ -23,6 +24,7 @@ const App = () => {
 				<Layout>
 					<Switch>
 						<Route exact path="/" component={Home} />
+						<Route exact path="/about" component={About} />
 						<Route exact path="/login" component={Login} />
 						<Route exact path="/password-recovery" component={RecoveryPassword} />
 						<Route exact path="/send-email" component={SendEmail} />
